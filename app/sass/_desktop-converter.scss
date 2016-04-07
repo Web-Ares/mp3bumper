@@ -1,0 +1,32 @@
+.desktop-converter {
+  overflow: hidden;
+  height: 710px;
+  margin-bottom: 146px;
+}
+.desktop-converter__list{
+  width: 930px;
+  padding-top: 6px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: -.5px;
+
+  li{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 26px;
+
+    &:before{
+      position: absolute;
+      top: 6px;
+      left: 3px;
+      width: 15px;
+      height: 15px;
+      border: 1px solid $desktop-converter__list;
+      border-radius: 50%;
+      content: '';
+    }
+
+  }
+
+}

@@ -1,0 +1,72 @@
+.btn {
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  position: relative;
+  border: none;
+  color: $btn-color;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -.5px;
+  background: $btn-back;
+  @include main-font1;
+  @include oneEventTransition(opacity);
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: .8;
+  }
+
+  &_1{
+    width: 337px;
+    height: 69px;
+    margin-bottom: 36px;
+    padding-left: 23px;
+    padding-right: 114px;
+    border-radius: 50px;
+    font-size: 38px;
+
+    &:before{
+      position: absolute;
+      top: 14px;
+      right: 114px;
+      width: 1px;
+      height: 38px;
+      background-color: $btn-1-separator;
+      content: '';
+    }
+
+    &:after{
+      position: absolute;
+      top: 11px;
+      right: 56px;
+      width: 33px;
+      height: 41px;
+      background: url('../img/icons-apple.png') no-repeat center right;
+      content: '';
+    }
+
+  }
+
+  &_2 {
+    width: 385px;
+    height: 54px;
+    border: 3px solid $btn-2-border;
+    border-radius: 3px;
+    background: $btn-2-back;
+    font-size: 26px;
+    font-weight: 100;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+  }
+
+}

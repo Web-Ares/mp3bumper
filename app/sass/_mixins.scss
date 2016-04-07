@@ -1,0 +1,37 @@
+//fonts
+@mixin main-font1() {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@mixin justify() {
+  text-align: justify;
+
+  &:after {
+    display: inline-block;
+    width: 100%;
+    content: '';
+  }
+}
+
+@mixin oneEventTransition( $event ) {
+  transition: $event .3s ease;
+  -webkit-transition: $event .3s ease;
+}
+@mixin absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+}
+@mixin absoluteCenterX() {
+  position: absolute;
+  left: 50%;
+  transform: translateX( -50% );
+}
+@mixin absoluteCenterY() {
+  position: absolute;
+  top: 50%;
+  transform: translateY( -50% );
+}

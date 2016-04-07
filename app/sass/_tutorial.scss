@@ -1,0 +1,41 @@
+.tutorial {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 700px;
+  margin: 0 22px 0 43px;
+}
+.tutorial__content{
+  padding-top: 15px;
+  padding-left: 58px;
+}
+.tutorial__marker{
+  color: $tutorial__marker;
+}
+.tutorial__list{
+  counter-reset: list 0;
+  padding-top: 11px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: .2px;
+
+  li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 76px;
+
+    &:before{
+      counter-increment: list;
+      content: counter(list);
+      position: absolute;
+      top: 3px;
+      left: 14px;
+      font-size: 38px;
+    }
+
+  }
+
+}
+
+

@@ -1,0 +1,50 @@
+.contact-us {
+  min-height: 600px;
+  margin-left: 10px;
+}
+.contact-us__form{
+  padding-top: 15px;
+
+  fieldset{
+    margin-bottom: 35px;
+  }
+
+  input, textarea{
+    display: inline-block;
+    vertical-align: middle;
+    width: 382px;
+    height: 41px;
+    border: 1px solid $contact-us-input-border;
+    padding: 0 15px;
+    @include main-font1;
+    font-size: 14px;
+  }
+
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 131px;
+    padding-top: 5px;
+  }
+
+}
+.contact-us__message{
+
+
+  textarea{
+    height: 127px;
+    padding: 10px 15px;
+  }
+
+  label {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+  }
+
+}
+.contact-us__btn-wrap{
+  padding-left: 131px;
+}
+
+

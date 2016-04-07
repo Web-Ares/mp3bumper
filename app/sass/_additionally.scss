@@ -1,0 +1,25 @@
+.additionally {
+  font-size: 14px;
+  font-weight: 300;
+}
+.additionally__item{
+  display: inline-block;
+
+  &:before{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px 0 2px;
+    content: '|';
+  }
+
+  &:first-child:before{
+    display: none;
+  }
+
+  a {
+    color: $additionally-color;
+  }
+
+}
+
+

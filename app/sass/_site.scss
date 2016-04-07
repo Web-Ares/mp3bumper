@@ -1,0 +1,63 @@
+.site {
+  @include justify;
+  @include main-font1;
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  &:after{
+    display: block;
+    height: 96px;
+    content: '';
+  }
+
+}
+.site__header{
+  position: relative;
+  height: 170px;
+  width: 100%;
+}
+.site__content{
+  position: relative;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding-left: 87px;
+}
+.site__title{
+  margin-bottom: 24px;
+  font-size: 58px;
+  font-weight: 100;
+  line-height: 61px;
+  letter-spacing: -1.2px;
+  text-align: left;
+}
+.site__footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 96px;
+}
+.site__footer-layout{
+  position: relative;
+  width: 1700px;
+  margin: 0 auto;
+  padding: 31px 97px 0;
+}
+.site__main-img{
+  position: absolute;
+  top: 0;
+  left: 890px;
+  right: 0;
+  text-align: right;
+}
+.site__content-img{
+  position: absolute;
+  top: 85px;
+  left: 900px;
+  right: 100px;
+  text-align: right;
+}
+
